@@ -1,0 +1,70 @@
+.jumbotron {
+	background-image: url("/images/awkyo_photo2.jpeg");
+  background-size: cover; 
+	height: 100%;
+	padding-top: 0px;
+	margin-bottom: 0px;
+}
+
+.header h1 {
+	font-family: 'Damion', cursive;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+}
+
+.header h1 {
+	display: inline-block;
+}
+
+/*.header .login-btn{
+	margin-top: 25px;
+	border: 2px solid white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+}*/
+
+.body-message {
+	text-align: center;
+	margin-top: 160px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+.body-message h2 {
+	font-size: 50px;
+}
+.body-message form {
+	margin-top: 10px;
+}
+
+form input:first-child {
+	border-radius: 5px;
+	height: 35px;
+	border: none;
+	color: black;
+}
+
+
+@media (max-width: 991px) {
+	.jumbotron {
+		background-position: 40% 50%;
+	}
+	.body-message h2 {
+		font-size: 35px;
+	}
+
+}
+
+@media (max-width: 500px) {
+	.body-message h2 {
+		font-size: 25px;
+	}
+	.body-message p {
+		font-size: 15px;
+	}
+}
+

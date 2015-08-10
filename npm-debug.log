@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-S', '[ejs' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json Modular1@ No description
+5 warn package.json Modular1@ No repository field.
+6 warn package.json Modular1@ No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ '[ejs', null ]
+9 verbose cache add name=undefined spec="[ejs" args=["[ejs",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: '[ejs',
+10 verbose parsed url   path: '[ejs',
+10 verbose parsed url   href: '[ejs' }
+11 silly lockFile 1b5f59f5-ejs [ejs
+12 verbose lock [ejs /Users/coding/.npm/1b5f59f5-ejs.lock
+13 silly lockFile 1b5f59f5-ejs [ejs
+14 silly lockFile 1b5f59f5-ejs [ejs
+15 verbose addNamed [ '[ejs', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 61d1353b-ejs [ejs@
+18 verbose lock [ejs@ /Users/coding/.npm/61d1353b-ejs.lock
+19 silly addNameRange { name: '[ejs', range: '*', hasData: false }
+20 verbose registry.get https://registry.npmjs.org/[ejs not expired, no request
+21 silly addNameRange number 2 { name: '[ejs', range: '*', hasData: true }
+22 silly addNameRange versions [ undefined, [] ]
+23 error TypeError: Cannot read property 'latest' of undefined
+23 error     at next (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:219:35)
+23 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:207:5
+23 error     at RegClient.get_ (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:130:14)
+23 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:49:12)
+23 error     at evalmachine.<anonymous>:272:14
+23 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
+23 error     at Object.oncomplete (evalmachine.<anonymous>:108:15)
+24 error If you need help, you may report this *entire* log,
+24 error including the npm and node versions, at:
+24 error     <http://github.com/npm/npm/issues>
+25 error System Darwin 14.3.0
+26 error command "node" "/usr/local/bin/npm" "install" "-S" "[ejs"
+27 error cwd /Users/coding/Desktop/codingdojo/codingdojoprojects/eboInnovations
+28 error node -v v0.10.35
+29 error npm -v 1.4.28
+30 error type non_object_property_load
+31 verbose exit [ 1, true ]
