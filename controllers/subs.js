@@ -26,7 +26,7 @@ subs.add = function(req, res){
 			    from: 'Awkyo <awkyo.noreply@gmail.com>', // sender address 
 			    to: req.body.email, // list of receivers 
 			    subject: 'Thanks for Subscribing to Awkyo', // Subject line 
-			    html: '<p><strong>Welcome to Awkyo!</strong></p><p>Thank you for subscribing. We will keep you informed with new updates.</p><hr><p>If you did not subscribe, or would like to unsubscribe, please visit <a href="http://www.awkyo.com/unsubscribe">http://localhost:8001/unsubscribe</a></p>' // html body 
+			    html: '<p><strong>Welcome to Awkyo!</strong></p><p>Thank you for subscribing. We will keep you informed with new updates.</p><hr><p>If you did not subscribe, or would like to unsubscribe, please visit <a href="http://www.awkyo.com/unsubscribe">http://www.awkyo.com/unsubscribe</a></p>' // html body 
 				};
 
 				transporter.sendMail(mailOptions, function(error, info){
