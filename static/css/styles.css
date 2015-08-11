@@ -1,9 +1,10 @@
 .jumbotron {
-	background-image: url("/images/awkyo_photo2.jpeg");
+	background-image: url("/images/background1.jpeg");
   background-size: cover; 
 	height: 100%;
 	padding-top: 0px;
 	margin-bottom: 0px;
+	position-attachment: fixed;
 }
 
 .header h1 {
@@ -19,20 +20,16 @@
 	display: inline-block;
 }
 
-/*.header .login-btn{
-	margin-top: 25px;
-	border: 2px solid white;
-	padding: 5px 10px;
-	border-radius: 5px;
-	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
-}*/
 
 .body-message {
 	text-align: center;
-	margin-top: 160px;
+	margin-top: 60px;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
+	border: 3px solid white;
+	border-radius: 5px;
+	background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.4);
 }
 .body-message h2 {
 	font-size: 50px;
@@ -49,17 +46,17 @@ form input:first-child {
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 1100px) {
 	.jumbotron {
 		background-position: 40% 50%;
 	}
 	.body-message h2 {
-		font-size: 35px;
+		font-size: 30px;
 	}
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 	.body-message h2 {
 		font-size: 25px;
 	}
