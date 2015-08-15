@@ -23,7 +23,7 @@ subs.add = function(req, res){
 			console.log('results', results);
 			if(results === null){
 				var mailOptions = {
-			    from: 'Awkyo <awkyo.noreply@gmail.com>', // sender address 
+			    from: 'Awkyo <noreply@awkyo.com>', // sender address 
 			    to: req.body.email, // list of receivers 
 			    subject: 'Thanks for Subscribing to Awkyo', // Subject line 
 			    html: '<p><strong>Welcome to Awkyo!</strong></p><p>Thank you for subscribing. We will keep you informed with new updates.</p><hr><p>If you did not subscribe, or would like to unsubscribe, please visit <a href="http://www.awkyo.com/unsubscribe">http://www.awkyo.com/unsubscribe</a></p>' // html body 
