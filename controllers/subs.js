@@ -44,7 +44,7 @@ subs.add = function(req, res){
 				    console.log('Message sent: ' + info.response);
 					});
 
-					var sub = new Sub(req.body);
+					var sub = new Sub({email: req.body.email, status: 'active', created_at: Date.now()});
 					sub.save(function(err, results){
 						if(err){
 							console.log("error", err);
@@ -65,7 +65,7 @@ subs.add = function(req, res){
 }, 
 
 subs.unsub = function(req, res){
-	Sub.remove({email: req.body.email}, function(err, results){
+	Sub.update({email: req.body.email}, {$set:{status: 'inactive'}}, function(err, results){
 		if(err){
 			console.log('error', err);
 		}else{

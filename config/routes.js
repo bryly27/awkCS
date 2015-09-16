@@ -19,8 +19,5 @@ module.exports = function(app) {
 		subs.unsub(req, res);
 	});
 
-	app.get('/survey', function(req, res){
-		res.render('survey');
-	});
 	
 }
