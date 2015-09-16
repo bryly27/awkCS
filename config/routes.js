@@ -18,5 +18,9 @@ module.exports = function(app) {
 	app.post('/unsub', function(req, res){
 		subs.unsub(req, res);
 	});
+
+	app.get('/survey', function(req, res){
+		res.render('survey');
+	});
 	
 }
