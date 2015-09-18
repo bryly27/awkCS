@@ -10,7 +10,7 @@ var connect = function() {
 	// specify options for when mongoose connects to mongodb
 	var options = { server: { socketOptions: { keepAlive: 1}}}
 	// connect to our mongodb database server with options specified above
-	mongoose.connect('mongodb://localhost/awkyo2');
+	mongoose.connect('mongodb://localhost/awkyo');
 }
 // actually connect to the database!
 connect();
